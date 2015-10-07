@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45142c931626b4f2f8e3b9ee213b7a83, type: 3}
+  m_Name: EditPlayerSettingsData
+  m_EditorClassIdentifier: 
+  m_strVersion: 0.0.0
+  m_eEnviroment: 0
+  m_strCompanyName: EveryStudio Inc.
+  m_strProductName: "\u53F3\u5411\u3051\u53F3"
+  m_strBundleIdentify: jp.everystudio.turnright
+  m_strServerUrl: 
+  m_strS3Url: https://s3-ap-northeast-1.amazonaws.com/every-studio/app/turnright/AssetBundles/Android/assets/assetbundleresource
+  m_bIsLocalModeS3: 0
+  m_bIsSecondS3: 0
+  m_bIsLocalModeServer: 0
+  m_strLocalServerUrl: http://192.168.30.10/
+  m_strNodejsUrl: none
+  m_strMypageUrl: https://every-studio.com/

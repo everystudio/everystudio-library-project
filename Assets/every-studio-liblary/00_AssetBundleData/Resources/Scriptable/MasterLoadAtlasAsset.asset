@@ -1,0 +1,128 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eec036765df244d19bb480b68c33231c, type: 3}
+  m_Name: MasterLoadAtlasAsset
+  m_EditorClassIdentifier: 
+  DataList:
+  - filename: battle
+    version: 100
+    pre_load: 1
+    path: assets/assetbundleresource/atlas/battle
+    replace_prefab: AssetBundle/Atlas/ReferencedPrefab/BattlePrefab
+    del_flg: 0
+  - filename: card
+    version: 100
+    pre_load: 0
+    path: assets/assetbundleresource/atlas/card
+    replace_prefab: AssetBundle/Atlas/ReferencedPrefab/CardPrefab
+    del_flg: 0
+  - filename: cardicon
+    version: 100
+    pre_load: 0
+    path: assets/assetbundleresource/atlas/cardicon
+    replace_prefab: AssetBundle/Atlas/ReferencedPrefab/CardIconPrefab
+    del_flg: 0
+  - filename: collection
+    version: 100
+    pre_load: 0
+    path: assets/assetbundleresource/atlas/collection
+    replace_prefab: AssetBundle/Atlas/ReferencedPrefab/CollectionPrefab
+    del_flg: 0
+  - filename: collectioncardicon
+    version: 100
+    pre_load: 0
+    path: assets/assetbundleresource/atlas/collectioncardicon
+    replace_prefab: AssetBundle/Atlas/ReferencedPrefab/CollectionCardPrefab
+    del_flg: 0
+  - filename: collectionicon
+    version: 100
+    pre_load: 0
+    path: assets/assetbundleresource/atlas/collectionicon
+    replace_prefab: AssetBundle/Atlas/ReferencedPrefab/CollectionIconPrefab
+    del_flg: 0
+  - filename: common
+    version: 100
+    pre_load: 0
+    path: assets/assetbundleresource/atlas/common
+    replace_prefab: AssetBundle/Atlas/ReferencedPrefab/CommonPrefab
+    del_flg: 0
+  - filename: friend
+    version: 100
+    pre_load: 0
+    path: assets/assetbundleresource/atlas/friend
+    replace_prefab: AssetBundle/Atlas/ReferencedPrefab/FriendPrefab
+    del_flg: 0
+  - filename: gacha
+    version: 100
+    pre_load: 0
+    path: assets/assetbundleresource/atlas/gacha
+    replace_prefab: AssetBundle/Atlas/ReferencedPrefab/GachaPrefab
+    del_flg: 0
+  - filename: icon
+    version: 100
+    pre_load: 0
+    path: assets/assetbundleresource/atlas/icon
+    replace_prefab: AssetBundle/Atlas/ReferencedPrefab/IconPrefab
+    del_flg: 0
+  - filename: moncard01
+    version: 100
+    pre_load: 1
+    path: assets/assetbundleresource/atlas/moncard01
+    replace_prefab: AssetBundle/Atlas/ReferencedPrefab/DummyPrefab
+    del_flg: 0
+  - filename: numbers
+    version: 100
+    pre_load: 0
+    path: assets/assetbundleresource/atlas/numbers
+    replace_prefab: AssetBundle/Atlas/ReferencedPrefab/DummyPrefab
+    del_flg: 0
+  - filename: pusher
+    version: 100
+    pre_load: 1
+    path: assets/assetbundleresource/atlas/pusher
+    replace_prefab: AssetBundle/Atlas/ReferencedPrefab/PusherPrefab
+    del_flg: 0
+  - filename: shop
+    version: 100
+    pre_load: 0
+    path: assets/assetbundleresource/atlas/shop
+    replace_prefab: AssetBundle/Atlas/ReferencedPrefab/ShopPrefab
+    del_flg: 0
+  - filename: skillicon
+    version: 100
+    pre_load: 0
+    path: assets/assetbundleresource/atlas/skillicon
+    replace_prefab: AssetBundle/Atlas/ReferencedPrefab/SkillIconPrefab
+    del_flg: 0
+  - filename: symbolatlas
+    version: 100
+    pre_load: 0
+    path: assets/assetbundleresource/atlas/symbolatlas
+    replace_prefab: AssetBundle/Atlas/ReferencedPrefab/SymbolAtlasPrefab
+    del_flg: 0
+  - filename: uiatlas
+    version: 100
+    pre_load: 0
+    path: assets/assetbundleresource/atlas/uiatlas
+    replace_prefab: AssetBundle/Atlas/ReferencedPrefab/UIAtlasPrefab
+    del_flg: 0
+  - filename: world
+    version: 100
+    pre_load: 0
+    path: assets/assetbundleresource/atlas/world
+    replace_prefab: AssetBundle/Atlas/ReferencedPrefab/WorldPrefab
+    del_flg: 0
+  - filename: item
+    version: 100
+    pre_load: 0
+    path: assets/assetbundleresource/atlas/item
+    replace_prefab: AssetBundle/Atlas/ReferencedPrefab/ItemPrefab
+    del_flg: 0

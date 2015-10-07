@@ -1,0 +1,1029 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5611ceb706534daca983dcf8b544fd9, type: 3}
+  m_Name: MasterLoadPrefabAsset
+  m_EditorClassIdentifier: 
+  DataList:
+  - filename: prefbombdrop
+    version: 100
+    pre_load: 1
+    path: assets/assetbundleresource/prefab/skill
+    del_flg: 0
+  - filename: prefctrlskilltidalwave
+    version: 100
+    pre_load: 250
+    path: assets/assetbundleresource/prefab/skill
+    del_flg: 0
+  - filename: prefpuppet
+    version: 100
+    pre_load: 250
+    path: assets/assetbundleresource/prefab/skill
+    del_flg: 0
+  - filename: prefselecticon
+    version: 100
+    pre_load: 200
+    path: assets/assetbundleresource/prefab/skill
+    del_flg: 0
+  - filename: prefskillblindblackpaint
+    version: 100
+    pre_load: 250
+    path: assets/assetbundleresource/prefab/skill
+    del_flg: 0
+  - filename: prefskillblindmist
+    version: 100
+    pre_load: 250
+    path: assets/assetbundleresource/prefab/skill
+    del_flg: 0
+  - filename: prefskillbreaktarget
+    version: 100
+    pre_load: 250
+    path: assets/assetbundleresource/prefab/skill
+    del_flg: 0
+  - filename: prefskillbumper
+    version: 100
+    pre_load: 250
+    path: assets/assetbundleresource/prefab/skill
+    del_flg: 0
+  - filename: prefskillcrosssword
+    version: 100
+    pre_load: 250
+    path: assets/assetbundleresource/prefab/skill
+    del_flg: 0
+  - filename: prefskillctrlsupporters
+    version: 100
+    pre_load: 250
+    path: assets/assetbundleresource/prefab/skill
+    del_flg: 0
+  - filename: prefskillfairy
+    version: 100
+    pre_load: 250
+    path: assets/assetbundleresource/prefab/skill
+    del_flg: 0
+  - filename: prefskillfieldheartattack
+    version: 100
+    pre_load: 250
+    path: assets/assetbundleresource/prefab/skill
+    del_flg: 0
+  - filename: prefskillfieldmoses
+    version: 100
+    pre_load: 250
+    path: assets/assetbundleresource/prefab/skill
+    del_flg: 0
+  - filename: prefskillfieldscaledown
+    version: 100
+    pre_load: 250
+    path: assets/assetbundleresource/prefab/skill
+    del_flg: 0
+  - filename: prefskillfieldsideshake
+    version: 100
+    pre_load: 250
+    path: assets/assetbundleresource/prefab/skill
+    del_flg: 0
+  - filename: prefskillfieldsidewall
+    version: 100
+    pre_load: 250
+    path: assets/assetbundleresource/prefab/skill
+    del_flg: 0
+  - filename: prefskillfieldslippy
+    version: 100
+    pre_load: 250
+    path: assets/assetbundleresource/prefab/skill
+    del_flg: 0
+  - filename: prefskillfieldstrokeup
+    version: 100
+    pre_load: 250
+    path: assets/assetbundleresource/prefab/skill
+    del_flg: 0
+  - filename: prefskillfieldvictoryslope
+    version: 100
+    pre_load: 250
+    path: assets/assetbundleresource/prefab/skill
+    del_flg: 0
+  - filename: prefskillflame
+    version: 100
+    pre_load: 250
+    path: assets/assetbundleresource/prefab/skill
+    del_flg: 0
+  - filename: prefskillfuwari
+    version: 100
+    pre_load: 250
+    path: assets/assetbundleresource/prefab/skill
+    del_flg: 0
+  - filename: prefskillharisen
+    version: 100
+    pre_load: 250
+    path: assets/assetbundleresource/prefab/skill
+    del_flg: 0
+  - filename: prefskillholetohell
+    version: 100
+    pre_load: 250
+    path: assets/assetbundleresource/prefab/skill
+    del_flg: 0
+  - filename: prefskillkanashibari
+    version: 100
+    pre_load: 250
+    path: assets/assetbundleresource/prefab/skill
+    del_flg: 0
+  - filename: prefskilllancebind
+    version: 100
+    pre_load: 250
+    path: assets/assetbundleresource/prefab/skill
+    del_flg: 0
+  - filename: prefskilllaser
+    version: 100
+    pre_load: 250
+    path: assets/assetbundleresource/prefab/skill
+    del_flg: 0
+  - filename: prefskilllimitgauge
+    version: 100
+    pre_load: 200
+    path: assets/assetbundleresource/prefab/skill
+    del_flg: 0
+  - filename: prefskillmachinehand
+    version: 100
+    pre_load: 250
+    path: assets/assetbundleresource/prefab/skill
+    del_flg: 0
+  - filename: prefskillmagnetu
+    version: 100
+    pre_load: 250
+    path: assets/assetbundleresource/prefab/skill
+    del_flg: 0
+  - filename: prefskillmedaltower
+    version: 100
+    pre_load: 250
+    path: assets/assetbundleresource/prefab/skill
+    del_flg: 0
+  - filename: prefskillmissile
+    version: 100
+    pre_load: 250
+    path: assets/assetbundleresource/prefab/skill
+    del_flg: 0
+  - filename: prefskilloosouji
+    version: 100
+    pre_load: 250
+    path: assets/assetbundleresource/prefab/skill
+    del_flg: 0
+  - filename: prefskillquiz
+    version: 100
+    pre_load: 250
+    path: assets/assetbundleresource/prefab/skill
+    del_flg: 0
+  - filename: prefskillrandombox
+    version: 100
+    pre_load: 250
+    path: assets/assetbundleresource/prefab/skill
+    del_flg: 0
+  - filename: prefskillrecovernormal
+    version: 100
+    pre_load: 250
+    path: assets/assetbundleresource/prefab/skill
+    del_flg: 0
+  - filename: prefskillrecoversmall
+    version: 100
+    pre_load: 250
+    path: assets/assetbundleresource/prefab/skill
+    del_flg: 0
+  - filename: prefskillsatellitelaser
+    version: 100
+    pre_load: 250
+    path: assets/assetbundleresource/prefab/skill
+    del_flg: 0
+  - filename: prefskillselectbase
+    version: 100
+    pre_load: 200
+    path: assets/assetbundleresource/prefab/skill
+    del_flg: 0
+  - filename: prefskillselectfree
+    version: 100
+    pre_load: 200
+    path: assets/assetbundleresource/prefab/skill
+    del_flg: 0
+  - filename: prefskillselecthorizontal
+    version: 100
+    pre_load: 200
+    path: assets/assetbundleresource/prefab/skill
+    del_flg: 0
+  - filename: prefskillselectrandomchoicebase
+    version: 100
+    pre_load: 200
+    path: assets/assetbundleresource/prefab/skill
+    del_flg: 0
+  - filename: prefskillselectswipefree
+    version: 100
+    pre_load: 200
+    path: assets/assetbundleresource/prefab/skill
+    del_flg: 0
+  - filename: prefskillselectswipehorizontal
+    version: 100
+    pre_load: 200
+    path: assets/assetbundleresource/prefab/skill
+    del_flg: 0
+  - filename: prefskillselectswipevertical
+    version: 100
+    pre_load: 200
+    path: assets/assetbundleresource/prefab/skill
+    del_flg: 0
+  - filename: prefskillselectvertical
+    version: 100
+    pre_load: 200
+    path: assets/assetbundleresource/prefab/skill
+    del_flg: 0
+  - filename: prefskillsplash
+    version: 100
+    pre_load: 250
+    path: assets/assetbundleresource/prefab/skill
+    del_flg: 0
+  - filename: prefskillspshotcurve
+    version: 100
+    pre_load: 250
+    path: assets/assetbundleresource/prefab/skill
+    del_flg: 0
+  - filename: prefskillspshotdouble
+    version: 100
+    pre_load: 250
+    path: assets/assetbundleresource/prefab/skill
+    del_flg: 0
+  - filename: prefskillspshotlob
+    version: 100
+    pre_load: 250
+    path: assets/assetbundleresource/prefab/skill
+    del_flg: 0
+  - filename: prefskillspshotpower
+    version: 100
+    pre_load: 250
+    path: assets/assetbundleresource/prefab/skill
+    del_flg: 0
+  - filename: prefskillsupporters
+    version: 100
+    pre_load: 250
+    path: assets/assetbundleresource/prefab/skill
+    del_flg: 0
+  - filename: prefskillsword
+    version: 100
+    pre_load: 250
+    path: assets/assetbundleresource/prefab/skill
+    del_flg: 0
+  - filename: prefskillthunder
+    version: 100
+    pre_load: 250
+    path: assets/assetbundleresource/prefab/skill
+    del_flg: 0
+  - filename: prefskillthunderbolt
+    version: 100
+    pre_load: 250
+    path: assets/assetbundleresource/prefab/skill
+    del_flg: 0
+  - filename: prefskilltidalwave
+    version: 100
+    pre_load: 250
+    path: assets/assetbundleresource/prefab/skill
+    del_flg: 0
+  - filename: prefskilltisoncleaner
+    version: 100
+    pre_load: 250
+    path: assets/assetbundleresource/prefab/skill
+    del_flg: 0
+  - filename: prefskilltrnado
+    version: 100
+    pre_load: 250
+    path: assets/assetbundleresource/prefab/skill
+    del_flg: 0
+  - filename: prefskillwallbase
+    version: 100
+    pre_load: 250
+    path: assets/assetbundleresource/prefab/skill
+    del_flg: 0
+  - filename: prefskillwatersplash
+    version: 100
+    pre_load: 250
+    path: assets/assetbundleresource/prefab/skill
+    del_flg: 0
+  - filename: prefskillwindbase
+    version: 100
+    pre_load: 250
+    path: assets/assetbundleresource/prefab/skill
+    del_flg: 0
+  - filename: prefskillwindtail
+    version: 100
+    pre_load: 250
+    path: assets/assetbundleresource/prefab/skill
+    del_flg: 0
+  - filename: prefsmedaltower
+    version: 100
+    pre_load: 250
+    path: assets/assetbundleresource/prefab/skill
+    del_flg: 0
+  - filename: prefstrnado
+    version: 100
+    pre_load: 250
+    path: assets/assetbundleresource/prefab/skill
+    del_flg: 0
+  - filename: preftimelimitgauge
+    version: 100
+    pre_load: 250
+    path: assets/assetbundleresource/prefab/skill
+    del_flg: 0
+  - filename: prefunitychan
+    version: 100
+    pre_load: 250
+    path: assets/assetbundleresource/prefab/skill
+    del_flg: 0
+  - filename: prefwaveearth
+    version: 100
+    pre_load: 250
+    path: assets/assetbundleresource/prefab/skill
+    del_flg: 0
+  - filename: blackpaint
+    version: 100
+    pre_load: 250
+    path: assets/assetbundleresource/prefab/skill/item
+    del_flg: 0
+  - filename: breaktarget
+    version: 100
+    pre_load: 250
+    path: assets/assetbundleresource/prefab/skill/item
+    del_flg: 0
+  - filename: bumper
+    version: 100
+    pre_load: 250
+    path: assets/assetbundleresource/prefab/skill/item
+    del_flg: 0
+  - filename: easyquiz
+    version: 100
+    pre_load: 250
+    path: assets/assetbundleresource/prefab/skill/item
+    del_flg: 0
+  - filename: flameball
+    version: 100
+    pre_load: 250
+    path: assets/assetbundleresource/prefab/skill/item
+    del_flg: 0
+  - filename: harisen
+    version: 100
+    pre_load: 250
+    path: assets/assetbundleresource/prefab/skill/item
+    del_flg: 0
+  - filename: lance
+    version: 100
+    pre_load: 250
+    path: assets/assetbundleresource/prefab/skill/item
+    del_flg: 0
+  - filename: machinehand
+    version: 100
+    pre_load: 250
+    path: assets/assetbundleresource/prefab/skill/item
+    del_flg: 0
+  - filename: magnetbase
+    version: 100
+    pre_load: 250
+    path: assets/assetbundleresource/prefab/skill/item
+    del_flg: 0
+  - filename: magnetu
+    version: 100
+    pre_load: 250
+    path: assets/assetbundleresource/prefab/skill/item
+    del_flg: 0
+  - filename: missile
+    version: 100
+    pre_load: 250
+    path: assets/assetbundleresource/prefab/skill/item
+    del_flg: 0
+  - filename: obj_skill_025_run
+    version: 100
+    pre_load: 250
+    path: assets/assetbundleresource/prefab/skill/item
+    del_flg: 0
+  - filename: sidewallstandard
+    version: 100
+    pre_load: 250
+    path: assets/assetbundleresource/prefab/skill/item
+    del_flg: 0
+  - filename: tisoncleaner
+    version: 100
+    pre_load: 250
+    path: assets/assetbundleresource/prefab/skill/item
+    del_flg: 0
+  - filename: medaltail_blue
+    version: 100
+    pre_load: 250
+    path: assets/assetbundleresource/prefab/skill/skill_common_parts
+    del_flg: 0
+  - filename: medaltail_green
+    version: 100
+    pre_load: 250
+    path: assets/assetbundleresource/prefab/skill/skill_common_parts
+    del_flg: 0
+  - filename: medaltail_red
+    version: 100
+    pre_load: 250
+    path: assets/assetbundleresource/prefab/skill/skill_common_parts
+    del_flg: 0
+  - filename: pref_comfx_2d_archerytarget
+    version: 100
+    pre_load: 250
+    path: assets/assetbundleresource/prefab/skill/skill_common_parts
+    del_flg: 0
+  - filename: pref_comfx_2d_quizset
+    version: 100
+    pre_load: 250
+    path: assets/assetbundleresource/prefab/skill/skill_common_parts
+    del_flg: 0
+  - filename: pref_comfx_2d_supporter_anim
+    version: 100
+    pre_load: 250
+    path: assets/assetbundleresource/prefab/skill/skill_common_parts
+    del_flg: 0
+  - filename: pref_comfx_2d_supporter_lv01_blue
+    version: 100
+    pre_load: 250
+    path: assets/assetbundleresource/prefab/skill/skill_common_parts
+    del_flg: 0
+  - filename: pref_comfx_2d_supporter_lv01_red
+    version: 100
+    pre_load: 250
+    path: assets/assetbundleresource/prefab/skill/skill_common_parts
+    del_flg: 0
+  - filename: pref_comfx_2d_supporter_lv02_blue
+    version: 100
+    pre_load: 250
+    path: assets/assetbundleresource/prefab/skill/skill_common_parts
+    del_flg: 0
+  - filename: pref_comfx_2d_supporter_lv02_red
+    version: 100
+    pre_load: 250
+    path: assets/assetbundleresource/prefab/skill/skill_common_parts
+    del_flg: 0
+  - filename: pref_comfx_2d_supporter_lv03_blue
+    version: 100
+    pre_load: 250
+    path: assets/assetbundleresource/prefab/skill/skill_common_parts
+    del_flg: 0
+  - filename: pref_comfx_2d_supporter_lv03_red
+    version: 100
+    pre_load: 250
+    path: assets/assetbundleresource/prefab/skill/skill_common_parts
+    del_flg: 0
+  - filename: pref_comfx_2d_supporter_lv04_blue
+    version: 100
+    pre_load: 250
+    path: assets/assetbundleresource/prefab/skill/skill_common_parts
+    del_flg: 0
+  - filename: pref_comfx_2d_supporter_lv04_red
+    version: 100
+    pre_load: 250
+    path: assets/assetbundleresource/prefab/skill/skill_common_parts
+    del_flg: 0
+  - filename: pref_comfx_blackpaint
+    version: 100
+    pre_load: 250
+    path: assets/assetbundleresource/prefab/skill/skill_common_parts
+    del_flg: 0
+  - filename: pref_comfx_blockfield
+    version: 100
+    pre_load: 250
+    path: assets/assetbundleresource/prefab/skill/skill_common_parts
+    del_flg: 0
+  - filename: pref_comfx_bomb_lv01
+    version: 100
+    pre_load: 250
+    path: assets/assetbundleresource/prefab/skill/skill_common_parts
+    del_flg: 0
+  - filename: pref_comfx_bomb_lv02
+    version: 100
+    pre_load: 250
+    path: assets/assetbundleresource/prefab/skill/skill_common_parts
+    del_flg: 0
+  - filename: pref_comfx_bomb_lv03
+    version: 100
+    pre_load: 250
+    path: assets/assetbundleresource/prefab/skill/skill_common_parts
+    del_flg: 0
+  - filename: pref_comfx_burstline
+    version: 100
+    pre_load: 250
+    path: assets/assetbundleresource/prefab/skill/skill_common_parts
+    del_flg: 0
+  - filename: pref_comfx_comicalbroken
+    version: 100
+    pre_load: 250
+    path: assets/assetbundleresource/prefab/skill/skill_common_parts
+    del_flg: 0
+  - filename: pref_comfx_comicsmoke
+    version: 100
+    pre_load: 250
+    path: assets/assetbundleresource/prefab/skill/skill_common_parts
+    del_flg: 0
+  - filename: pref_comfx_crossline_in
+    version: 100
+    pre_load: 250
+    path: assets/assetbundleresource/prefab/skill/skill_common_parts
+    del_flg: 0
+  - filename: pref_comfx_crossline_play
+    version: 100
+    pre_load: 250
+    path: assets/assetbundleresource/prefab/skill/skill_common_parts
+    del_flg: 0
+  - filename: pref_comfx_crosswind
+    version: 100
+    pre_load: 250
+    path: assets/assetbundleresource/prefab/skill/skill_common_parts
+    del_flg: 0
+  - filename: pref_comfx_explosion
+    version: 100
+    pre_load: 250
+    path: assets/assetbundleresource/prefab/skill/skill_common_parts
+    del_flg: 0
+  - filename: pref_comfx_fieldcrack
+    version: 100
+    pre_load: 250
+    path: assets/assetbundleresource/prefab/skill/skill_common_parts
+    del_flg: 0
+  - filename: pref_comfx_fireburn
+    version: 100
+    pre_load: 250
+    path: assets/assetbundleresource/prefab/skill/skill_common_parts
+    del_flg: 0
+  - filename: pref_comfx_fragment
+    version: 100
+    pre_load: 250
+    path: assets/assetbundleresource/prefab/skill/skill_common_parts
+    del_flg: 0
+  - filename: pref_comfx_hitmark
+    version: 100
+    pre_load: 250
+    path: assets/assetbundleresource/prefab/skill/skill_common_parts
+    del_flg: 0
+  - filename: pref_comfx_icecloud
+    version: 100
+    pre_load: 250
+    path: assets/assetbundleresource/prefab/skill/skill_common_parts
+    del_flg: 0
+  - filename: pref_comfx_kamifubuki
+    version: 100
+    pre_load: 250
+    path: assets/assetbundleresource/prefab/skill/skill_common_parts
+    del_flg: 0
+  - filename: pref_comfx_kokedama
+    version: 100
+    pre_load: 250
+    path: assets/assetbundleresource/prefab/skill/skill_common_parts
+    del_flg: 0
+  - filename: pref_comfx_laser
+    version: 100
+    pre_load: 250
+    path: assets/assetbundleresource/prefab/skill/skill_common_parts
+    del_flg: 0
+  - filename: pref_comfx_laser_lv01
+    version: 100
+    pre_load: 250
+    path: assets/assetbundleresource/prefab/skill/skill_common_parts
+    del_flg: 0
+  - filename: pref_comfx_laser_lv02
+    version: 100
+    pre_load: 250
+    path: assets/assetbundleresource/prefab/skill/skill_common_parts
+    del_flg: 0
+  - filename: pref_comfx_laserpointer
+    version: 100
+    pre_load: 250
+    path: assets/assetbundleresource/prefab/skill/skill_common_parts
+    del_flg: 0
+  - filename: pref_comfx_leafandwind
+    version: 100
+    pre_load: 250
+    path: assets/assetbundleresource/prefab/skill/skill_common_parts
+    del_flg: 0
+  - filename: pref_comfx_lightline
+    version: 100
+    pre_load: 250
+    path: assets/assetbundleresource/prefab/skill/skill_common_parts
+    del_flg: 0
+  - filename: pref_comfx_mist_dark
+    version: 100
+    pre_load: 250
+    path: assets/assetbundleresource/prefab/skill/skill_common_parts
+    del_flg: 0
+  - filename: pref_comfx_mist_wh
+    version: 100
+    pre_load: 250
+    path: assets/assetbundleresource/prefab/skill/skill_common_parts
+    del_flg: 0
+  - filename: pref_comfx_puff
+    version: 100
+    pre_load: 250
+    path: assets/assetbundleresource/prefab/skill/skill_common_parts
+    del_flg: 0
+  - filename: pref_comfx_raypole
+    version: 100
+    pre_load: 250
+    path: assets/assetbundleresource/prefab/skill/skill_common_parts
+    del_flg: 0
+  - filename: pref_comfx_ringexpand
+    version: 100
+    pre_load: 250
+    path: assets/assetbundleresource/prefab/skill/skill_common_parts
+    del_flg: 0
+  - filename: pref_comfx_sandpuff
+    version: 100
+    pre_load: 250
+    path: assets/assetbundleresource/prefab/skill/skill_common_parts
+    del_flg: 0
+  - filename: pref_comfx_sandstome
+    version: 100
+    pre_load: 250
+    path: assets/assetbundleresource/prefab/skill/skill_common_parts
+    del_flg: 0
+  - filename: pref_comfx_spot
+    version: 100
+    pre_load: 250
+    path: assets/assetbundleresource/prefab/skill/skill_common_parts
+    del_flg: 0
+  - filename: pref_comfx_takebouki
+    version: 100
+    pre_load: 250
+    path: assets/assetbundleresource/prefab/skill/skill_common_parts
+    del_flg: 0
+  - filename: pref_comfx_thunder_lv01
+    version: 100
+    pre_load: 250
+    path: assets/assetbundleresource/prefab/skill/skill_common_parts
+    del_flg: 0
+  - filename: pref_comfx_thunder_lv02
+    version: 100
+    pre_load: 250
+    path: assets/assetbundleresource/prefab/skill/skill_common_parts
+    del_flg: 0
+  - filename: pref_comfx_thunderball
+    version: 100
+    pre_load: 250
+    path: assets/assetbundleresource/prefab/skill/skill_common_parts
+    del_flg: 0
+  - filename: pref_comfx_trnade
+    version: 100
+    pre_load: 250
+    path: assets/assetbundleresource/prefab/skill/skill_common_parts
+    del_flg: 0
+  - filename: pref_comfx_vacume
+    version: 100
+    pre_load: 250
+    path: assets/assetbundleresource/prefab/skill/skill_common_parts
+    del_flg: 0
+  - filename: pref_comfx_watersplash
+    version: 100
+    pre_load: 250
+    path: assets/assetbundleresource/prefab/skill/skill_common_parts
+    del_flg: 0
+  - filename: pref_comfx_windline
+    version: 100
+    pre_load: 250
+    path: assets/assetbundleresource/prefab/skill/skill_common_parts
+    del_flg: 0
+  - filename: lotterymachine
+    version: 100
+    pre_load: 1
+    path: assets/assetbundleresource/prefab/pushergame
+    del_flg: 0
+  - filename: prefsugoroku
+    version: 100
+    pre_load: 1
+    path: assets/assetbundleresource/prefab/pushergame
+    del_flg: 0
+  - filename: prefjackpot
+    version: 100
+    pre_load: 1
+    path: assets/assetbundleresource/prefab/pushergame
+    del_flg: 0
+  - filename: preftreasurechest
+    version: 100
+    pre_load: 1
+    path: assets/assetbundleresource/prefab/fieldevent
+    del_flg: 0
+  - filename: pref_tap_energycharge_lv01
+    version: 100
+    pre_load: 1
+    path: assets/assetbundleresource/prefab/effect
+    del_flg: 0
+  - filename: pref_tap_energycharge_lv02
+    version: 100
+    pre_load: 1
+    path: assets/assetbundleresource/prefab/effect
+    del_flg: 0
+  - filename: pref_tap_energycharge_lv03_in
+    version: 100
+    pre_load: 1
+    path: assets/assetbundleresource/prefab/effect
+    del_flg: 0
+  - filename: pref_tap_energycharge_lv03_lp
+    version: 100
+    pre_load: 1
+    path: assets/assetbundleresource/prefab/effect
+    del_flg: 0
+  - filename: pref_act_003_gacha_anim_cardin
+    version: 100
+    pre_load: 0
+    path: assets/assetbundleresource/prefab/gacha
+    del_flg: 0
+  - filename: pref_act_003_gacha_anim_normal
+    version: 100
+    pre_load: 0
+    path: assets/assetbundleresource/prefab/gacha
+    del_flg: 0
+  - filename: pref_act_003_gacha_anim_rare
+    version: 100
+    pre_load: 0
+    path: assets/assetbundleresource/prefab/gacha
+    del_flg: 0
+  - filename: pref_act_003_gacha_anim_sr
+    version: 100
+    pre_load: 0
+    path: assets/assetbundleresource/prefab/gacha
+    del_flg: 0
+  - filename: pref_act_003_gachaworld_charge
+    version: 100
+    pre_load: 0
+    path: assets/assetbundleresource/prefab/gacha
+    del_flg: 0
+  - filename: pref_act_003_gachaworld_free
+    version: 100
+    pre_load: 0
+    path: assets/assetbundleresource/prefab/gacha
+    del_flg: 0
+  - filename: pref_act_003_shinka_anim
+    version: 100
+    pre_load: 0
+    path: assets/assetbundleresource/prefab/gacha
+    del_flg: 0
+  - filename: act_003_camandlight
+    version: 100
+    pre_load: 0
+    path: assets/assetbundleresource/prefab/gacha
+    del_flg: 0
+  - filename: testmodel_004_goldmountain
+    version: 100
+    pre_load: 0
+    path: assets/assetbundleresource/prefab/goldrush
+    del_flg: 0
+  - filename: testmodel_005_goldrock
+    version: 100
+    pre_load: 0
+    path: assets/assetbundleresource/prefab/goldrush
+    del_flg: 0
+  - filename: testmodel_006_goldbar
+    version: 100
+    pre_load: 0
+    path: assets/assetbundleresource/prefab/goldrush
+    del_flg: 0
+  - filename: fieldprefabtest1
+    version: 100
+    pre_load: 0
+    path: assets/assetbundleresource/prefab/fieldprefab
+    del_flg: 0
+  - filename: pref_textAnim_loginBonus_in
+    version: 100
+    pre_load: 1
+    path: assets/assetbundleresource/prefab/textAnim
+    del_flg: 0
+  - filename: pref_textAnim_loginBonus_lp
+    version: 100
+    pre_load: 1
+    path: assets/assetbundleresource/prefab/textAnim
+    del_flg: 0
+  - filename: pref_textAnim_loginBonus_out
+    version: 100
+    pre_load: 1
+    path: assets/assetbundleresource/prefab/textAnim
+    del_flg: 0
+  - filename: pref_test_medal_speed_effect
+    version: 100
+    pre_load: 1
+    path: assets/assetbundleresource/prefab/effect
+    del_flg: 0
+  - filename: testmodel_005_goldrock_field
+    version: 100
+    pre_load: 0
+    path: assets/assetbundleresource/prefab/goldrush
+    del_flg: 0
+  - filename: fieldprefabballoon001
+    version: 100
+    pre_load: 0
+    path: assets/assetbundleresource/prefab/fieldprefab
+    del_flg: 0
+  - filename: fieldprefabballoon002
+    version: 100
+    pre_load: 0
+    path: assets/assetbundleresource/prefab/fieldprefab
+    del_flg: 0
+  - filename: fieldprefabballoon003
+    version: 100
+    pre_load: 0
+    path: assets/assetbundleresource/prefab/fieldprefab
+    del_flg: 0
+  - filename: fieldprefabballoon004
+    version: 100
+    pre_load: 0
+    path: assets/assetbundleresource/prefab/fieldprefab
+    del_flg: 0
+  - filename: fieldprefabblock001
+    version: 100
+    pre_load: 0
+    path: assets/assetbundleresource/prefab/fieldprefab
+    del_flg: 0
+  - filename: fieldprefabblock002
+    version: 100
+    pre_load: 0
+    path: assets/assetbundleresource/prefab/fieldprefab
+    del_flg: 0
+  - filename: fieldprefabblock003
+    version: 100
+    pre_load: 0
+    path: assets/assetbundleresource/prefab/fieldprefab
+    del_flg: 0
+  - filename: fieldprefabblockballoon001
+    version: 100
+    pre_load: 0
+    path: assets/assetbundleresource/prefab/fieldprefab
+    del_flg: 0
+  - filename: fieldprefabblockballoon002
+    version: 100
+    pre_load: 0
+    path: assets/assetbundleresource/prefab/fieldprefab
+    del_flg: 0
+  - filename: fieldprefabblockballoon003
+    version: 100
+    pre_load: 0
+    path: assets/assetbundleresource/prefab/fieldprefab
+    del_flg: 0
+  - filename: fieldprefabballoonbarrel001
+    version: 100
+    pre_load: 0
+    path: assets/assetbundleresource/prefab/fieldprefab
+    del_flg: 0
+  - filename: fieldprefabballoonbarrelblock001
+    version: 100
+    pre_load: 0
+    path: assets/assetbundleresource/prefab/fieldprefab
+    del_flg: 0
+  - filename: fieldprefabbarrel001
+    version: 100
+    pre_load: 0
+    path: assets/assetbundleresource/prefab/fieldprefab
+    del_flg: 0
+  - filename: fieldprefabbarrel002
+    version: 100
+    pre_load: 0
+    path: assets/assetbundleresource/prefab/fieldprefab
+    del_flg: 0
+  - filename: fieldprefabbarrel003
+    version: 100
+    pre_load: 0
+    path: assets/assetbundleresource/prefab/fieldprefab
+    del_flg: 0
+  - filename: fieldprefabbarrelblock001
+    version: 100
+    pre_load: 0
+    path: assets/assetbundleresource/prefab/fieldprefab
+    del_flg: 0
+  - filename: prefball
+    version: 100
+    pre_load: 1
+    path: assets/assetbundleresource/prefab/fieldevent
+    del_flg: 0
+  - filename: prefskillball
+    version: 100
+    pre_load: 1
+    path: assets/assetbundleresource/prefab/fieldevent
+    del_flg: 0
+  - filename: testmodel_004_goldmountain_out
+    version: 100
+    pre_load: 0
+    path: assets/assetbundleresource/prefab/goldrush
+    del_flg: 0
+  - filename: testmodel_004_goldmoutain_in
+    version: 100
+    pre_load: 0
+    path: assets/assetbundleresource/prefab/goldrush
+    del_flg: 0
+  - filename: testmodel_004_goldmoutain_loop
+    version: 100
+    pre_load: 0
+    path: assets/assetbundleresource/prefab/goldrush
+    del_flg: 0
+  - filename: bg_quest_000_01
+    version: 100
+    pre_load: 0
+    path: assets/assetbundleresource/prefab/questbackground
+    del_flg: 0
+  - filename: bg_quest_000_02
+    version: 100
+    pre_load: 0
+    path: assets/assetbundleresource/prefab/questbackground
+    del_flg: 0
+  - filename: bg_quest_001_01
+    version: 100
+    pre_load: 0
+    path: assets/assetbundleresource/prefab/questbackground
+    del_flg: 0
+  - filename: bg_quest_001_02
+    version: 100
+    pre_load: 0
+    path: assets/assetbundleresource/prefab/questbackground
+    del_flg: 0
+  - filename: bg_quest_002_01
+    version: 100
+    pre_load: 0
+    path: assets/assetbundleresource/prefab/questbackground
+    del_flg: 0
+  - filename: bg_quest_002_02
+    version: 100
+    pre_load: 0
+    path: assets/assetbundleresource/prefab/questbackground
+    del_flg: 0
+  - filename: bg_quest_003_01
+    version: 100
+    pre_load: 0
+    path: assets/assetbundleresource/prefab/questbackground
+    del_flg: 0
+  - filename: bg_quest_003_02
+    version: 100
+    pre_load: 0
+    path: assets/assetbundleresource/prefab/questbackground
+    del_flg: 0
+  - filename: bg_quest_004_01
+    version: 100
+    pre_load: 0
+    path: assets/assetbundleresource/prefab/questbackground
+    del_flg: 0
+  - filename: bg_quest_004_02
+    version: 100
+    pre_load: 0
+    path: assets/assetbundleresource/prefab/questbackground
+    del_flg: 0
+  - filename: prefline_001
+    version: 100
+    pre_load: 0
+    path: assets/assetbundleresource/prefab/questline
+    del_flg: 0
+  - filename: prefline_002
+    version: 100
+    pre_load: 0
+    path: assets/assetbundleresource/prefab/questline
+    del_flg: 0
+  - filename: prefline_003
+    version: 100
+    pre_load: 0
+    path: assets/assetbundleresource/prefab/questline
+    del_flg: 0
+  - filename: prefline_004
+    version: 100
+    pre_load: 0
+    path: assets/assetbundleresource/prefab/questline
+    del_flg: 0
+  - filename: prefcurve_001
+    version: 100
+    pre_load: 0
+    path: assets/assetbundleresource/prefab/questline
+    del_flg: 0
+  - filename: prefcurve_002
+    version: 100
+    pre_load: 0
+    path: assets/assetbundleresource/prefab/questline
+    del_flg: 0
+  - filename: prefcurve_003
+    version: 100
+    pre_load: 0
+    path: assets/assetbundleresource/prefab/questline
+    del_flg: 0
+  - filename: prefcurve_004
+    version: 100
+    pre_load: 0
+    path: assets/assetbundleresource/prefab/questline
+    del_flg: 0
+  - filename: prefcurve02_001
+    version: 100
+    pre_load: 0
+    path: assets/assetbundleresource/prefab/questline
+    del_flg: 0
+  - filename: prefcurve02_002
+    version: 100
+    pre_load: 0
+    path: assets/assetbundleresource/prefab/questline
+    del_flg: 0
+  - filename: prefcurve02_003
+    version: 100
+    pre_load: 0
+    path: assets/assetbundleresource/prefab/questline
+    del_flg: 0
+  - filename: prefcurve02_004
+    version: 100
+    pre_load: 0
+    path: assets/assetbundleresource/prefab/questline
+    del_flg: 0

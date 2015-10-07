@@ -1,0 +1,265 @@
+
+AssetBundelTool利用マニュアル  Ver1.0 (2015/1/29)
+＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+
+◎使用開始まで
+
+⚫️以下のデータをUnity上のProjectに配置して使ってください。
+00_AssetBundleData
+01_AssetBundleTool
+Plugins
+StreamingAssets
+
+
+⚫️データローダを使う場合はProject内　/Assets/01_AssetBundleTool/Prefab/フォルダにある二つのプレハブ
+LoadManager
+DataContainer
+をHierachyに配置して下さい。
+LoadManagerとDataContainerのタグにはGameControllerが設定されている必要があります。
+
+
+◎データの生成開始まで
+
+/Assets/01_AssetBundleTool/Prefab/Scripts/System/DataMakeSheetに
+
+	public class StageData
+	{
+		public int index;
+		public int fieldIndex;
+		public float startX;
+		public string MapName;
+		public bool canShoot;
+	}
+
+のような追加したいデータに対応したClassを追加してください。
+
+準備はこのクラス設置のみです。
+
+
+◎データの生成
+データ管理ツールは
+/Assets/01_AssetBundleTool/AssetBundleTool
+です。
+プレハブを選択するとInspector上にデータ生成ツールを起動するボタンが出現します。
+このボタンをクリックする事で各機能を使用します。
+
+
+⚫️C#ファイル生成
+DataMakeSheetに書かれているクラスを元に、アセットバンドル化に必要なシステムを自動で構築します。
+構築したファイルは
+/Assets/01_AssetBundleTool/Scripts/DataDefine/
+以下に格納されます。
+ここのファイルは全部削除してもこのボタンで再生成できます。
+
+⚫️スクリプタブルオブジェクト生成
+
+/Assets/00_AssetBundleData/Resources/Scriptable/
+以下にScriptableObjectを生成します。
+
+/Assets/00_AssetBundleData/Resources/AssetSrcPrefab/
+にScriptableObjectをアタッチしたプレハブを生成します。このプレハブがアセットバンドルのソースになります。
+
+⚫️データのアセットバンドル生成
+アセットバンドルを生成します。同時に生成時間などの情報をプレバブとアセットバンドルに埋め込みます。
+
+生成されたアセットバンドルは
+/Assets/StreamingAssets/Data/
+に配置されます。
+
+⚫️Excelひな形生成
+
+/Assets/00_AssetBundleData/Resources/Excel/
+以下にデータ記述用のExcelのひな形を作ります。
+この中身にデータを書く事によって実際に使うデータを記述します。
+既にデータがある場合は上書きするので注意してください。
+押す前に一度プロジェクトをGitに上げてバックアップした方が良いと思います。
+
+⚫️CSVひな形生成
+
+/Assets/00_AssetBundleData/Resources/CSV/
+以下にデータ記述用のCSVのひな形を作ります。
+既にデータがある場合は上書きするので注意してください。
+押す前に一度プロジェクトをGitに上げてバックアップした方が良いと思います。
+
+
+
+⚫️EXCEL→CSV変換
+/Assets/00_AssetBundleData/Resources/Excel/のデータを
+/Assets/00_AssetBundleData/Resources/CSV/へ記述します。
+全データ上書きなので扱いには注意してください。
+
+⚫️"CSV→EXCEL変換
+/Assets/00_AssetBundleData/Resources/CSV/のデータを
+/Assets/00_AssetBundleData/Resources/Excel/へ記述します。
+全データ上書きなので扱いには注意してください。
+
+⚫️CSV→ScriptableObject変換
+/Assets/00_AssetBundleData/Resources/CSV/のデータを
+/Assets/00_AssetBundleData/Resources/Scriptable/に記述します。
+/Assets/00_AssetBundleData/Resources/AssetSrcPrefab/はScriptableオブジェクトが
+アタッチされているので自動的にこちらの中身も更新されます。
+
+⚫️データロードコンテナを更新
+/Assets/01_AssetBundleTool/Prefab/Scripts/System/DataMakeSheeの記述を元に
+読み込み系のシステムが自動設定されます。
+構築したファイルは
+/Assets/01_AssetBundleTool/Scripts/DataContainer/
+以下に格納されます。
+現状ではDataContainer.csファイルが一枚生成されるだけです。
+
+
+
+⚫️管理ファイルを更新
+
+どのようなアセットバンドルをローダーが読まなければならないかを書いた
+アセットバンドル名の管理リストを生成します。
+生成されたリストは
+/Assets/00_AssetBundleData/Resources/Admin/に
+
+	AssetBundleDataCSV
+	AssetBundleDataAsset
+	AssetBundleDataPrefab
+	三つセットで配置されます。
+
+	CSVは情報のソースファイル
+	Assetはスクリプタブルオブジェクト
+	Prefabはそれを内包したプレハブです
+
+
+⚫️管理ファイルのアセットバンドル生成
+
+️管理ファイルを更新で作られたプレハブをソースに
+どのようなアセットバンドルをローダーが読まなければならないかを書いた
+アセットバンドル名のリストのアセットバンドルを生成します。
+
+生成されたアセットバンドルは
+StreamingAssets/AssetbundleList/
+に配置されます。
+
+
+⚫️データチェッカーファイルを生成
+/Assets/01_AssetBundleTool/Scripts/System/AssetBundleVer
+が生成されます。
+
+/Assets/StreamingAssets/Data/のアセットバンドルと
+/Assets/00_AssetBundleData/Resources/AssetSrcPrefab/のソースプレハブの保存時間を比較して
+バージョンが違う場合は赤い色で警告をするデータリストを作成します。
+
+⚫️データ選択トグル
+	チェックをはずすとそのクラスはデータ生成の対象外になります。
+	アセットバンドルの生成だけはまだEXCELのリスト依存なのでこの機能が有効ではありません。
+	手動で切り替えてください。
+
+
+◎ゲーム上でのデータの読み込み
+
+ゲームを実行すると、Hierarchy内の
+LoadManagerでStreamingAssets内のアセットバンドルデータを読み込み
+DataContainerに格納します。
+
+int fieldIndex = DataContainer.Instance.StageDataList[7].fieldIndex;
+
+こんな感じでデータを取り出して使ってください。
+
+
+◎データのパスの変更
+	/Assets/01_AssetBundleTool/Prefab/Scripts/System/SystemSetting に使用しているパスを
+	集約しているのでここを変更してください。
+	現時点ではパスはローカルのみに設定されているので、サーバから読み込む場合はサーバURLとローカルURLを切り替えられるように
+	すると良いです。
+
+
+
+◎データのリセット
+
+	新しいプロジェクトの生成などでデータを消去する場合の手順を書いておきます。
+
+	/Assets/00_AssetBundleData/Resources/
+	内部の以下のフォルダの中身を全部消去してください。
+	Admin
+	AssetSrcPrefab
+	CSV
+	Excel
+	Scriptable
+
+
+	/Assets/01_AssetBundleTool/Scripts/DataDefine/
+	と
+	/Assets/01_AssetBundleTool/Scripts/DataDefine/Editor
+	の中にあるC#ファイルは全部自動生成ファイルなので消去してください。
+
+	
+
+
+	/Assets/01_AssetBundleTool/Scripts/DataContainer/DataContainer
+
+	ファイルを開いて
+	中身を下記のようにコメントアウトするか一旦消してください。
+	DataSetのクラスはローダーが読んでいるので残しておくとエラーになりません。
+
+	/*
+	public List<StageData.Data>  StageDataList;
+	public List<EnemyData.Data>  EnemyDataList;
+	public List<BattleData.Data>  BattleDataList;
+	public List<AISetting.Data>  AISettingList;
+*/
+	public static void DataSet (GameObject obj, LoadManager.LoadDataParam loadDataParam)
+	{
+
+	/*
+		switch (loadDataParam.fileName) {
+		
+		case "StageDataPrefab":
+			DataContainer.Instance.StageDataList = obj.GetComponent<StageDataDataHolder> ().assetBundleData.DataList;
+			break;
+		case "EnemyDataPrefab":
+			DataContainer.Instance.EnemyDataList = obj.GetComponent<EnemyDataDataHolder> ().assetBundleData.DataList;
+			break;
+		case "BattleDataPrefab":
+			DataContainer.Instance.BattleDataList = obj.GetComponent<BattleDataDataHolder> ().assetBundleData.DataList;
+			break;
+		case "AISettingPrefab":
+			DataContainer.Instance.AISettingList = obj.GetComponent<AISettingDataHolder> ().assetBundleData.DataList;
+			break;
+		default:
+			Debug.LogError("未定義のデータが来ています" + loadDataParam.fileName);
+			break;
+		}
+		*/
+	}
+
+
+	これで初期状態になります。
+
+
+◎今後の改造アドバイス。
+
+	⚫️バージョン管理について
+
+	まだバージョン番号更新システムが実装されていないので
+	LoadManager 69行
+			Caching.CleanCache();
+	で毎回キャッシュを消している状況です。
+	新しいアセットバンドルを生成するたびに自動でアセットバンドルのバージョン番号を増やして
+	新しいバージョンなら読み込むようなシステムが必要です。
+	（アセットバンドルを更新するたびに前の数値に+1していくと良いかも？　またはサーバー側で管理するのがよい）
+
+	BundleLoader 50行の
+	loadDataParam.version
+	更新したナンバーをいれれば、新しいデータがこない限り旧キャッシュを読むようなシステムにすぐ
+	変更できるのでバージョン管理が始まったらこの関連をいじってみてください。
+
+
+
+	⚫️読み込みURLについて
+
+	現状ではStreamingAssets内のアセットバンドルを読むようにしかできていません。
+	/Assets/01_AssetBundleTool/Prefab/Scripts/System/SystemSettingにあるパスが
+	データの読み込みぱすなので、これをローカルとWEBURLとで自由に切り替えられるようにすると良いです。
+	パズルキングダムでは実装していましたが、パスの整理が追いつかなかったのでまだ切り替えが実装されていません。
+
+
+
+
+
+

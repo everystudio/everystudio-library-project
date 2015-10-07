@@ -1,0 +1,644 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 236af5d8844a848fdb0131e6cd07968a, type: 3}
+  m_Name: MasterLoadSpriteAsset
+  m_EditorClassIdentifier: 
+  DataList:
+  - filename: 00000003
+    version: 100
+    pre_load: 0
+    path: assets/assetbundleresource/sprite/card_illust
+    del_flg: 0
+  - filename: 11010013
+    version: 100
+    pre_load: 0
+    path: assets/assetbundleresource/sprite/card_illust
+    del_flg: 0
+  - filename: 11010023
+    version: 100
+    pre_load: 0
+    path: assets/assetbundleresource/sprite/card_illust
+    del_flg: 0
+  - filename: 11010033
+    version: 100
+    pre_load: 0
+    path: assets/assetbundleresource/sprite/card_illust
+    del_flg: 0
+  - filename: 11010043
+    version: 100
+    pre_load: 0
+    path: assets/assetbundleresource/sprite/card_illust
+    del_flg: 0
+  - filename: 11020013
+    version: 100
+    pre_load: 0
+    path: assets/assetbundleresource/sprite/card_illust
+    del_flg: 0
+  - filename: 11020023
+    version: 100
+    pre_load: 0
+    path: assets/assetbundleresource/sprite/card_illust
+    del_flg: 0
+  - filename: 11020033
+    version: 100
+    pre_load: 0
+    path: assets/assetbundleresource/sprite/card_illust
+    del_flg: 0
+  - filename: 11020043
+    version: 100
+    pre_load: 0
+    path: assets/assetbundleresource/sprite/card_illust
+    del_flg: 0
+  - filename: 11030013
+    version: 100
+    pre_load: 0
+    path: assets/assetbundleresource/sprite/card_illust
+    del_flg: 0
+  - filename: 11030023
+    version: 100
+    pre_load: 0
+    path: assets/assetbundleresource/sprite/card_illust
+    del_flg: 0
+  - filename: 11030033
+    version: 100
+    pre_load: 0
+    path: assets/assetbundleresource/sprite/card_illust
+    del_flg: 0
+  - filename: 11030043
+    version: 100
+    pre_load: 0
+    path: assets/assetbundleresource/sprite/card_illust
+    del_flg: 0
+  - filename: 12010013
+    version: 100
+    pre_load: 0
+    path: assets/assetbundleresource/sprite/card_illust
+    del_flg: 0
+  - filename: 12010023
+    version: 100
+    pre_load: 0
+    path: assets/assetbundleresource/sprite/card_illust
+    del_flg: 0
+  - filename: 12010033
+    version: 100
+    pre_load: 0
+    path: assets/assetbundleresource/sprite/card_illust
+    del_flg: 0
+  - filename: 12010043
+    version: 100
+    pre_load: 0
+    path: assets/assetbundleresource/sprite/card_illust
+    del_flg: 0
+  - filename: 12020013
+    version: 100
+    pre_load: 0
+    path: assets/assetbundleresource/sprite/card_illust
+    del_flg: 0
+  - filename: 12020023
+    version: 100
+    pre_load: 0
+    path: assets/assetbundleresource/sprite/card_illust
+    del_flg: 0
+  - filename: 12020033
+    version: 100
+    pre_load: 0
+    path: assets/assetbundleresource/sprite/card_illust
+    del_flg: 0
+  - filename: 12020043
+    version: 100
+    pre_load: 0
+    path: assets/assetbundleresource/sprite/card_illust
+    del_flg: 0
+  - filename: 12030013
+    version: 100
+    pre_load: 0
+    path: assets/assetbundleresource/sprite/card_illust
+    del_flg: 0
+  - filename: 12030023
+    version: 100
+    pre_load: 0
+    path: assets/assetbundleresource/sprite/card_illust
+    del_flg: 0
+  - filename: 12030033
+    version: 100
+    pre_load: 0
+    path: assets/assetbundleresource/sprite/card_illust
+    del_flg: 0
+  - filename: 12030043
+    version: 100
+    pre_load: 0
+    path: assets/assetbundleresource/sprite/card_illust
+    del_flg: 0
+  - filename: 13010013
+    version: 100
+    pre_load: 0
+    path: assets/assetbundleresource/sprite/card_illust
+    del_flg: 0
+  - filename: 13010023
+    version: 100
+    pre_load: 0
+    path: assets/assetbundleresource/sprite/card_illust
+    del_flg: 0
+  - filename: 13010033
+    version: 100
+    pre_load: 0
+    path: assets/assetbundleresource/sprite/card_illust
+    del_flg: 0
+  - filename: 13010043
+    version: 100
+    pre_load: 0
+    path: assets/assetbundleresource/sprite/card_illust
+    del_flg: 0
+  - filename: 13010053
+    version: 100
+    pre_load: 0
+    path: assets/assetbundleresource/sprite/card_illust
+    del_flg: 0
+  - filename: 13010063
+    version: 100
+    pre_load: 0
+    path: assets/assetbundleresource/sprite/card_illust
+    del_flg: 0
+  - filename: 13010073
+    version: 100
+    pre_load: 0
+    path: assets/assetbundleresource/sprite/card_illust
+    del_flg: 0
+  - filename: 13010083
+    version: 100
+    pre_load: 0
+    path: assets/assetbundleresource/sprite/card_illust
+    del_flg: 0
+  - filename: 13010093
+    version: 100
+    pre_load: 0
+    path: assets/assetbundleresource/sprite/card_illust
+    del_flg: 0
+  - filename: 13010103
+    version: 100
+    pre_load: 0
+    path: assets/assetbundleresource/sprite/card_illust
+    del_flg: 0
+  - filename: 13020013
+    version: 100
+    pre_load: 0
+    path: assets/assetbundleresource/sprite/card_illust
+    del_flg: 0
+  - filename: 13020023
+    version: 100
+    pre_load: 0
+    path: assets/assetbundleresource/sprite/card_illust
+    del_flg: 0
+  - filename: 13020033
+    version: 100
+    pre_load: 0
+    path: assets/assetbundleresource/sprite/card_illust
+    del_flg: 0
+  - filename: 13020043
+    version: 100
+    pre_load: 0
+    path: assets/assetbundleresource/sprite/card_illust
+    del_flg: 0
+  - filename: 13020053
+    version: 100
+    pre_load: 0
+    path: assets/assetbundleresource/sprite/card_illust
+    del_flg: 0
+  - filename: 13020063
+    version: 100
+    pre_load: 0
+    path: assets/assetbundleresource/sprite/card_illust
+    del_flg: 0
+  - filename: 13020073
+    version: 100
+    pre_load: 0
+    path: assets/assetbundleresource/sprite/card_illust
+    del_flg: 0
+  - filename: 13020083
+    version: 100
+    pre_load: 0
+    path: assets/assetbundleresource/sprite/card_illust
+    del_flg: 0
+  - filename: 13020093
+    version: 100
+    pre_load: 0
+    path: assets/assetbundleresource/sprite/card_illust
+    del_flg: 0
+  - filename: 13030013
+    version: 100
+    pre_load: 0
+    path: assets/assetbundleresource/sprite/card_illust
+    del_flg: 0
+  - filename: 13030023
+    version: 100
+    pre_load: 0
+    path: assets/assetbundleresource/sprite/card_illust
+    del_flg: 0
+  - filename: 13030033
+    version: 100
+    pre_load: 0
+    path: assets/assetbundleresource/sprite/card_illust
+    del_flg: 0
+  - filename: 13030043
+    version: 100
+    pre_load: 0
+    path: assets/assetbundleresource/sprite/card_illust
+    del_flg: 0
+  - filename: 13030053
+    version: 100
+    pre_load: 0
+    path: assets/assetbundleresource/sprite/card_illust
+    del_flg: 0
+  - filename: 13030063
+    version: 100
+    pre_load: 0
+    path: assets/assetbundleresource/sprite/card_illust
+    del_flg: 0
+  - filename: 13030073
+    version: 100
+    pre_load: 0
+    path: assets/assetbundleresource/sprite/card_illust
+    del_flg: 0
+  - filename: 13030083
+    version: 100
+    pre_load: 0
+    path: assets/assetbundleresource/sprite/card_illust
+    del_flg: 0
+  - filename: 13030093
+    version: 100
+    pre_load: 0
+    path: assets/assetbundleresource/sprite/card_illust
+    del_flg: 0
+  - filename: 14010013
+    version: 100
+    pre_load: 0
+    path: assets/assetbundleresource/sprite/card_illust
+    del_flg: 0
+  - filename: 14010023
+    version: 100
+    pre_load: 0
+    path: assets/assetbundleresource/sprite/card_illust
+    del_flg: 0
+  - filename: 14010033
+    version: 100
+    pre_load: 0
+    path: assets/assetbundleresource/sprite/card_illust
+    del_flg: 0
+  - filename: 14010043
+    version: 100
+    pre_load: 0
+    path: assets/assetbundleresource/sprite/card_illust
+    del_flg: 0
+  - filename: 14010053
+    version: 100
+    pre_load: 0
+    path: assets/assetbundleresource/sprite/card_illust
+    del_flg: 0
+  - filename: 14010063
+    version: 100
+    pre_load: 0
+    path: assets/assetbundleresource/sprite/card_illust
+    del_flg: 0
+  - filename: 14010073
+    version: 100
+    pre_load: 0
+    path: assets/assetbundleresource/sprite/card_illust
+    del_flg: 0
+  - filename: 14010083
+    version: 100
+    pre_load: 0
+    path: assets/assetbundleresource/sprite/card_illust
+    del_flg: 0
+  - filename: 14010093
+    version: 100
+    pre_load: 0
+    path: assets/assetbundleresource/sprite/card_illust
+    del_flg: 0
+  - filename: 14010103
+    version: 100
+    pre_load: 0
+    path: assets/assetbundleresource/sprite/card_illust
+    del_flg: 0
+  - filename: 14020013
+    version: 100
+    pre_load: 0
+    path: assets/assetbundleresource/sprite/card_illust
+    del_flg: 0
+  - filename: 14020023
+    version: 100
+    pre_load: 0
+    path: assets/assetbundleresource/sprite/card_illust
+    del_flg: 0
+  - filename: 14020033
+    version: 100
+    pre_load: 0
+    path: assets/assetbundleresource/sprite/card_illust
+    del_flg: 0
+  - filename: 14020043
+    version: 100
+    pre_load: 0
+    path: assets/assetbundleresource/sprite/card_illust
+    del_flg: 0
+  - filename: 14020053
+    version: 100
+    pre_load: 0
+    path: assets/assetbundleresource/sprite/card_illust
+    del_flg: 0
+  - filename: 14020063
+    version: 100
+    pre_load: 0
+    path: assets/assetbundleresource/sprite/card_illust
+    del_flg: 0
+  - filename: 14020073
+    version: 100
+    pre_load: 0
+    path: assets/assetbundleresource/sprite/card_illust
+    del_flg: 0
+  - filename: 14020083
+    version: 100
+    pre_load: 0
+    path: assets/assetbundleresource/sprite/card_illust
+    del_flg: 0
+  - filename: 14020093
+    version: 100
+    pre_load: 0
+    path: assets/assetbundleresource/sprite/card_illust
+    del_flg: 0
+  - filename: 14030013
+    version: 100
+    pre_load: 0
+    path: assets/assetbundleresource/sprite/card_illust
+    del_flg: 0
+  - filename: 14030023
+    version: 100
+    pre_load: 0
+    path: assets/assetbundleresource/sprite/card_illust
+    del_flg: 0
+  - filename: 14030033
+    version: 100
+    pre_load: 0
+    path: assets/assetbundleresource/sprite/card_illust
+    del_flg: 0
+  - filename: 14030043
+    version: 100
+    pre_load: 0
+    path: assets/assetbundleresource/sprite/card_illust
+    del_flg: 0
+  - filename: 14030053
+    version: 100
+    pre_load: 0
+    path: assets/assetbundleresource/sprite/card_illust
+    del_flg: 0
+  - filename: 14030063
+    version: 100
+    pre_load: 0
+    path: assets/assetbundleresource/sprite/card_illust
+    del_flg: 0
+  - filename: 14030073
+    version: 100
+    pre_load: 0
+    path: assets/assetbundleresource/sprite/card_illust
+    del_flg: 0
+  - filename: 14030083
+    version: 100
+    pre_load: 0
+    path: assets/assetbundleresource/sprite/card_illust
+    del_flg: 0
+  - filename: 14030093
+    version: 100
+    pre_load: 0
+    path: assets/assetbundleresource/sprite/card_illust
+    del_flg: 0
+  - filename: 15010013
+    version: 100
+    pre_load: 0
+    path: assets/assetbundleresource/sprite/card_illust
+    del_flg: 0
+  - filename: 15010023
+    version: 100
+    pre_load: 0
+    path: assets/assetbundleresource/sprite/card_illust
+    del_flg: 0
+  - filename: 15010033
+    version: 100
+    pre_load: 0
+    path: assets/assetbundleresource/sprite/card_illust
+    del_flg: 0
+  - filename: 15010043
+    version: 100
+    pre_load: 0
+    path: assets/assetbundleresource/sprite/card_illust
+    del_flg: 0
+  - filename: 15020013
+    version: 100
+    pre_load: 0
+    path: assets/assetbundleresource/sprite/card_illust
+    del_flg: 0
+  - filename: 15020023
+    version: 100
+    pre_load: 0
+    path: assets/assetbundleresource/sprite/card_illust
+    del_flg: 0
+  - filename: 15020033
+    version: 100
+    pre_load: 0
+    path: assets/assetbundleresource/sprite/card_illust
+    del_flg: 0
+  - filename: 15020043
+    version: 100
+    pre_load: 0
+    path: assets/assetbundleresource/sprite/card_illust
+    del_flg: 0
+  - filename: 15030013
+    version: 100
+    pre_load: 0
+    path: assets/assetbundleresource/sprite/card_illust
+    del_flg: 0
+  - filename: 15030023
+    version: 100
+    pre_load: 0
+    path: assets/assetbundleresource/sprite/card_illust
+    del_flg: 0
+  - filename: 15030033
+    version: 100
+    pre_load: 0
+    path: assets/assetbundleresource/sprite/card_illust
+    del_flg: 0
+  - filename: 15030043
+    version: 100
+    pre_load: 0
+    path: assets/assetbundleresource/sprite/card_illust
+    del_flg: 0
+  - filename: 16010013
+    version: 100
+    pre_load: 0
+    path: assets/assetbundleresource/sprite/card_illust
+    del_flg: 0
+  - filename: 16010023
+    version: 100
+    pre_load: 0
+    path: assets/assetbundleresource/sprite/card_illust
+    del_flg: 0
+  - filename: 16010033
+    version: 100
+    pre_load: 0
+    path: assets/assetbundleresource/sprite/card_illust
+    del_flg: 0
+  - filename: 16010043
+    version: 100
+    pre_load: 0
+    path: assets/assetbundleresource/sprite/card_illust
+    del_flg: 0
+  - filename: 16020013
+    version: 100
+    pre_load: 0
+    path: assets/assetbundleresource/sprite/card_illust
+    del_flg: 0
+  - filename: 16020023
+    version: 100
+    pre_load: 0
+    path: assets/assetbundleresource/sprite/card_illust
+    del_flg: 0
+  - filename: 16020033
+    version: 100
+    pre_load: 0
+    path: assets/assetbundleresource/sprite/card_illust
+    del_flg: 0
+  - filename: 16020043
+    version: 100
+    pre_load: 0
+    path: assets/assetbundleresource/sprite/card_illust
+    del_flg: 0
+  - filename: 16030013
+    version: 100
+    pre_load: 0
+    path: assets/assetbundleresource/sprite/card_illust
+    del_flg: 0
+  - filename: 16030023
+    version: 100
+    pre_load: 0
+    path: assets/assetbundleresource/sprite/card_illust
+    del_flg: 0
+  - filename: 16030033
+    version: 100
+    pre_load: 0
+    path: assets/assetbundleresource/sprite/card_illust
+    del_flg: 0
+  - filename: 16030043
+    version: 100
+    pre_load: 0
+    path: assets/assetbundleresource/sprite/card_illust
+    del_flg: 0
+  - filename: tips_base0
+    version: 100
+    pre_load: 0
+    path: assets/assetbundleresource/sprite/tips
+    del_flg: 0
+  - filename: tips_base1
+    version: 100
+    pre_load: 0
+    path: assets/assetbundleresource/sprite/tips
+    del_flg: 0
+  - filename: tips_base2
+    version: 100
+    pre_load: 0
+    path: assets/assetbundleresource/sprite/tips
+    del_flg: 0
+  - filename: tips_base3
+    version: 100
+    pre_load: 0
+    path: assets/assetbundleresource/sprite/tips
+    del_flg: 0
+  - filename: tips_base4
+    version: 100
+    pre_load: 0
+    path: assets/assetbundleresource/sprite/tips
+    del_flg: 0
+  - filename: navi_pos001
+    version: 100
+    pre_load: 0
+    path: assets/assetbundleresource/sprite/navi
+    del_flg: 0
+  - filename: navi_pos002
+    version: 100
+    pre_load: 0
+    path: assets/assetbundleresource/sprite/navi
+    del_flg: 0
+  - filename: navi_pos003
+    version: 100
+    pre_load: 0
+    path: assets/assetbundleresource/sprite/navi
+    del_flg: 0
+  - filename: navi_pos004
+    version: 100
+    pre_load: 0
+    path: assets/assetbundleresource/sprite/navi
+    del_flg: 0
+  - filename: navi_pos005
+    version: 100
+    pre_load: 0
+    path: assets/assetbundleresource/sprite/navi
+    del_flg: 0
+  - filename: navi_pos006
+    version: 100
+    pre_load: 0
+    path: assets/assetbundleresource/sprite/navi
+    del_flg: 0
+  - filename: collection_illust0000
+    version: 100
+    pre_load: 0
+    path: assets/assetbundleresource/sprite/collection_illust
+    del_flg: 0
+  - filename: collection_illust0001
+    version: 100
+    pre_load: 0
+    path: assets/assetbundleresource/sprite/collection_illust
+    del_flg: 0
+  - filename: collection_illust0002
+    version: 100
+    pre_load: 0
+    path: assets/assetbundleresource/sprite/collection_illust
+    del_flg: 0
+  - filename: collection_illust0003
+    version: 100
+    pre_load: 0
+    path: assets/assetbundleresource/sprite/collection_illust
+    del_flg: 0
+  - filename: collection_illust0004
+    version: 100
+    pre_load: 0
+    path: assets/assetbundleresource/sprite/collection_illust
+    del_flg: 0
+  - filename: collection_illust0005
+    version: 100
+    pre_load: 0
+    path: assets/assetbundleresource/sprite/collection_illust
+    del_flg: 0
+  - filename: collection_illust0006
+    version: 100
+    pre_load: 0
+    path: assets/assetbundleresource/sprite/collection_illust
+    del_flg: 0
+  - filename: collection_illust0007
+    version: 100
+    pre_load: 0
+    path: assets/assetbundleresource/sprite/collection_illust
+    del_flg: 0
+  - filename: collection_illust0008
+    version: 100
+    pre_load: 0
+    path: assets/assetbundleresource/sprite/collection_illust
+    del_flg: 0
+  - filename: collection_illust0009
+    version: 100
+    pre_load: 0
+    path: assets/assetbundleresource/sprite/collection_illust
+    del_flg: 0
