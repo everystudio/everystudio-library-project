@@ -64,7 +64,6 @@ public class CommonNetwork : MonoBehaviour {
 	const int APP_VERSION_ERROR 		= 31;
 	const int UNKNOWN_ERROR_CODE = 255;
 	const string JSON_ERROR_CODE = "error_code";
-	public const string APPLYING_URL = "http://production-puzzle-app-2026643382.ap-northeast-1.elb.amazonaws.com/";
 
 	public Dictionary<int , TNetworkData> m_dictNetworkData = new Dictionary<int , TNetworkData>();
 
@@ -142,13 +141,6 @@ public class CommonNetwork : MonoBehaviour {
 		return m_eConnect;
 	}
 
-	/// <summary>
-	/// Determines whether this instance is error the specified _iSerial.
-	/// エラー状態の真偽を返す.
-	/// TODO:現状動いてません
-	/// </summary>
-	/// <returns><c>true</c> if this instance is error the specified _iSerial; otherwise, <c>false</c>.</returns>
-	/// <param name="_iSerial">_i serial.</param>
 	public bool IsError( int _iSerial ){
 		bool bRet = false;
 		if (m_dictNetworkData.ContainsKey (_iSerial)) {
@@ -172,16 +164,8 @@ public class CommonNetwork : MonoBehaviour {
 		return;
 	}
 
-	public int Recieve( E_NETWORK _eNetwork ){
-		string strUrl = GetURL (_eNetwork);
-		return Recieve (strUrl);
-	}
 	public int Recieve( string _strUrl ){
 		return sendNetwork (_strUrl, "{\"dummy\":0}");
-	}
-	public int Request( E_NETWORK _eNetwork , string _strJson , int _intSerial = 0){
-		string strUrl = GetURL (_eNetwork);
-		return Request (strUrl, _strJson);
 	}
 	public int Request( string _strUrl , string _strJson , int _intSerial = 0){
 		return sendNetwork (_strUrl, _strJson);
@@ -194,18 +178,7 @@ public class CommonNetwork : MonoBehaviour {
 		//StartCoroutine (sendModule (_eNetwork , _strJson , _intSerial ));
 		return sendGetHtml (_strUrl, _strJson);
 	}
-
-
-	public int RegisterEntry(string _strUUID ){
-		string json_data = "{\"uuid\":\""+ _strUUID +"\"}";
-		return Request (E_NETWORK.REGISTER_ENTRY, json_data);
-	}
-
-	public int RequestUid( string _strUUID ){
-		string json_data = "{\"uuid\":\""+ _strUUID +"\"}";
-		return Request (E_NETWORK.GET_UID, json_data);
-	}
-
+		
 	public bool send( ){
 		return true;
 
@@ -214,101 +187,6 @@ public class CommonNetwork : MonoBehaviour {
 	public bool send( string _strSendJson ){
 		return true;
 	}
-
-	public GameObject m_goConnectingDialog;
-	private bool m_bAutoConnectingDialog = true;
-	public bool AutoConnectingDialog {
-		get{ return m_bAutoConnectingDialog;}
-		set{ m_bAutoConnectingDialog = value;}
-	}
-
-	private STEP m_eConnectingDialogStatus;
-	private bool m_bShowConnectingDialog = false;
-	private float m_fConnectingTimer;
-	private GameObject m_goConnectingDialogPos;
-	public void setConnectiongDialogPos (GameObject _pos) {
-		m_goConnectingDialogPos = _pos;
-	}
-	public void showConnectingDialog() {
-		m_bAutoConnectingDialog = false;
-		m_bShowConnectingDialog = true;
-		m_eConnectingDialogStatus = STEP.NONE;
-	}
-	/*
-	public void closeConnectingDialog() {
-		m_bAutoConnectingDialog = true;
-		m_bShowConnectingDialog = false;
-		m_eConnectingDialogStatus = STEP.MAX;
-		if (m_goConnectingDialog) {
-			TweenScale ts = null;
-			ts = TweenScale.Begin (m_goConnectingDialog, 0.252f, Vector3.zero);
-			if (ts != null) {
-				EventDelegate.Set (ts.onFinished, destoryConnectiongDialog);
-			} else {
-				destoryConnectiongDialog ();
-			}
-		}
-	}
-	*/
-	private void destoryConnectiongDialog () {
-		if( m_goConnectingDialog ){
-			Destroy( m_goConnectingDialog );
-		}
-		if (m_goConnectingDialogPos) {
-			m_goConnectingDialogPos = null;
-		}
-	}
-
-	/*
-	private void chkConnectingDialog() {
-		if (m_bShowConnectingDialog) {
-//			//Debug.Log ("m_eConnectingDialogStatus="+m_eConnectingDialogStatus+" m_bAutoConnectingDialog="+m_bAutoConnectingDialog);
-			switch (m_eConnectingDialogStatus) {
-			case STEP.NONE:
-				m_fConnectingTimer = 0.0f;
-				if( m_goConnectingDialog ){
-					Destroy( m_goConnectingDialog );
-				}
-				m_eConnectingDialogStatus = STEP.DELAY;
-
-				break;
-			case STEP.DELAY:
-				if (m_fConnectingDialogTime <= m_fConnectingTimer) {
-					m_eConnectingDialogStatus = STEP.BUSY;
-				} else {
-					m_fConnectingTimer += Time.deltaTime;
-				}
-
-				break;
-			case STEP.BUSY:
-				if( m_goConnectingDialog ){
-					Destroy( m_goConnectingDialog );
-				}
-				GameObject PrefConnecting = Resources.Load("rPrefConnecting", typeof(GameObject)) as GameObject;
-				if( m_goConnectingDialogPos ){
-					m_goConnectingDialog = NGUITools.AddChild (m_goConnectingDialogPos, PrefConnecting) as GameObject;
-				}
-				else {
-					m_goConnectingDialog = NGUITools.AddChild (this.gameObject, PrefConnecting) as GameObject;
-				}
-				m_csCtrlConnecting = (CtrlConnecting)m_goConnectingDialog.GetComponent(typeof(CtrlConnecting));
-				m_csCtrlConnecting.Init(m_goConnectingDialog);
-
-				m_eConnectingDialogStatus = STEP.IDLE;
-
-				break;
-			case STEP.IDLE:
-
-				break;
-			default:
-				if( m_goConnectingDialog ){
-					Destroy( m_goConnectingDialog );
-				}
-				break;
-			}
-		}
-	}
-	*/
 
 	private int sendNetwork( string _strUrl  , string _strJson ){
 		m_eConnect = EConnect.CONNECTING;
@@ -344,7 +222,6 @@ public class CommonNetwork : MonoBehaviour {
 		//  リクエストエラーの場合
 		if(!string.IsNullOrEmpty(www.error)){
 
-			m_eStep = STEP.IDLE;
 			m_intErrorCode = UNKNOWN_ERROR_CODE;
 			m_eConnect = EConnect.ERROR_UNKNOWN;
 
@@ -356,7 +233,6 @@ public class CommonNetwork : MonoBehaviour {
 			if( m_bErrorLog ){
 				Debug.Log("timeout_error");
 			}
-			m_eStep = STEP.IDLE;
 			yield break; // コルーチンを終了
 
 			//リクエストしたのに空で返ってきた場合
@@ -364,7 +240,6 @@ public class CommonNetwork : MonoBehaviour {
 			if( m_bErrorLog ){
 				Debug.Log("no items");
 			}
-			m_eStep = STEP.IDLE;
 			yield break; // コルーチンを終了
 		}
 		else {
@@ -430,8 +305,6 @@ public class CommonNetwork : MonoBehaviour {
 		m_dictNetworkData.Remove (_iNetworkSerial);
 		m_dictNetworkData.Add (_iNetworkSerial, tNetworkData);
 
-		m_eStep = STEP.IDLE;
-
 		yield break;		// コルーチン終了
 	}
 
@@ -441,8 +314,6 @@ public class CommonNetwork : MonoBehaviour {
 		// 通信用に収納
 		WWWForm form = new WWWForm ();
 		form.AddField ("req_data", _strJson);
-
-		setConnectingDialogTime ();
 
 		string url = _strUrl;
 
@@ -459,7 +330,6 @@ public class CommonNetwork : MonoBehaviour {
 		//  リクエストエラーの場合
 		if(!string.IsNullOrEmpty(www.error)){
 
-			m_eStep = STEP.IDLE;
 			m_intErrorCode = UNKNOWN_ERROR_CODE;
 			m_eConnect = EConnect.ERROR_UNKNOWN;
 
@@ -471,7 +341,6 @@ public class CommonNetwork : MonoBehaviour {
 			if( m_bErrorLog ){
 				Debug.Log("timeout_error");
 			}
-			m_eStep = STEP.IDLE;
 			yield break; // コルーチンを終了
 
 			//リクエストしたのに空で返ってきた場合
@@ -479,7 +348,6 @@ public class CommonNetwork : MonoBehaviour {
 			if( m_bErrorLog ){
 				Debug.Log("no items");
 			}
-			m_eStep = STEP.IDLE;
 			yield break; // コルーチンを終了
 		}
 		else {
@@ -545,7 +413,6 @@ public class CommonNetwork : MonoBehaviour {
 		m_dictNetworkData.Remove (_iNetworkSerial);
 		m_dictNetworkData.Add (_iNetworkSerial, tNetworkData);
 
-		m_eStep = STEP.IDLE;
 		yield break;
 	}
 	private IEnumerator ResponseConnectJson(WWW www, float timeout){
@@ -569,150 +436,22 @@ public class CommonNetwork : MonoBehaviour {
 //==================================================================================
 
     private void SafeDebutLog (string debug_json) {
-        int limit_string = 5000;
-        int count = Mathf.CeilToInt((float)debug_json.Length / limit_string);
-        for (int i = 0;i < count;i++) {
+		int limit_string = 5000;
+		int count = Mathf.CeilToInt ((float)debug_json.Length / limit_string);
+		for (int i = 0; i < count; i++) {
 
 			string strLogMessage = "";
-            if (i == count-1) {
+			if (i == count - 1) {
 				strLogMessage = debug_json.Substring (i * limit_string);
-            } else {
+			} else {
 				strLogMessage = debug_json.Substring (i * limit_string, limit_string);
-            }
-			Debug.Log(strLogMessage);
+			}
+			Debug.Log (strLogMessage);
 			//Textreader.Append ( "/log_data.txt" , strLogMessage);
-        }
-    }
-
-	public string GetURL(E_NETWORK _eNetwork )
-	{
-		string address = " ";
-		string host = " ";
-
-		host = ConfigManager.instance.GetEditPlayerSettingsData().m_strServerUrl;
-
-		/*
-		if( DEFINE.IsApplying ){
-			host = APPLYING_URL;
 		}
-		*/
-
-		switch( _eNetwork )
-		{
-		case E_NETWORK.REGISTER_ENTRY:		address="register/entry";break;
-		case E_NETWORK.GET_UID:				address="register/confirm";break;
-
-		default:
-			address="error";
-			break;
-		}
-
-		string url = host + address;
-		return url;
-
-
 	}
-		
+
 //==================================================================================
-
-
-
-	public enum STEP{
-
-		NONE 		= 0,
-		IDLE 		,
-
-		DELAY 		,
-		BUSY 		,
-		END 		,
-
-		MAX 		,
-	}
-	public STEP m_eStep;
-	public STEP m_eStepPre;
-	public float m_fTimer;
-	public float m_fConnectingDialogTime;
-	public void setConnectingDialogTime (float _connectingDialogTime = 3.0f) {
-		m_fConnectingDialogTime = _connectingDialogTime;
-	}
-
-	public GameObject m_goPosConnecting;
-
-	public GameObject m_goConnecting;
-	//public CtrlConnecting m_csCtrlConnecting;
-
-	void Update (){
-		/*
-		bool bInit = false;
-		if( m_eStepPre != m_eStep ){
-			m_eStepPre  = m_eStep;
-			bInit = true;
-		}
-
-		switch( m_eStep )
-		{
-		case STEP.NONE: break;
-
-		case STEP.IDLE:
-			if( bInit ){
-				if( m_csCtrlConnecting != null ){
-                    // From Here i think he want remove the indicator 
-                    //    so i create a class in CtrlConnecting so he can erase it. 
-                    //    the original script doest erase it created it
-                    // The right way to do this is Close the Script, by Close()
-                    // since if u do this the memory is still well alive in the system
-					m_csCtrlConnecting.EraseIndicator();
-					m_csCtrlConnecting = null;
-				}
-				if( m_goConnecting ){
-					Destroy( m_goConnecting );
-				}
-			}
-			break;
-
-		case STEP.DELAY:
-			if( bInit ){
-				m_fTimer = 0.0f;
-				if( m_goConnecting ){
-					Destroy( m_goConnecting );
-				}
-			}
-			if( m_fConnectingDialogTime <= m_fTimer && m_bAutoConnectingDialog){
-				m_eStep = STEP.BUSY;
-			}
-			else {
-				m_fTimer += Time.deltaTime;
-			}
-			break;
-
-		case STEP.BUSY:
-			if( bInit ){
-				if( m_goConnecting ){
-					Destroy( m_goConnecting );
-				}
-				GameObject PrefConnecting = Resources.Load("rPrefConnecting", typeof(GameObject)) as GameObject;
-				if( m_goPosConnecting ){
-					m_goConnecting = NGUITools.AddChild (m_goPosConnecting, PrefConnecting) as GameObject;
-				}
-				else {
-					m_goConnecting = NGUITools.AddChild (this.gameObject, PrefConnecting) as GameObject;
-				}
-				m_csCtrlConnecting = (CtrlConnecting)m_goConnecting.GetComponent(typeof(CtrlConnecting));
-				m_csCtrlConnecting.Init(m_goConnecting);
-			}
-			break;
-		case STEP.END:
-		default:
-			break;
-
-		}
-		*/
-
-		//chkConnectingDialog ();
-
-		return;
-	}
-
 
 	// ====================================================================================
 	// 以下シングルトン宣言
@@ -720,7 +459,6 @@ public class CommonNetwork : MonoBehaviour {
 		m_eConnect= EConnect.DISCONNECT;
 		m_eStatus = EStatus.SLEEP;
 		m_bErrorLog = false;
-		m_fTimer = 0.0f;
 
 		SESSION_ERROR = false;
 
@@ -765,32 +503,7 @@ public class CommonNetwork : MonoBehaviour {
 	void Awake(){
 		return;
 	}
-
-	/*
-	public LoadSettingData m_LoadSettingData;	
-	
-	public void LoadSetting ()
-	{
-		UnityEngine.Object[] assets;
-		assets = Resources.LoadAll("LoadSettingData");
-		
-		foreach (UnityEngine.Object asset in assets)
-		{
-			if (asset is LoadSettingData)
-			{
-			    m_LoadSettingData = (LoadSettingData)asset;
-			}
-		}
-	}	
-	*/
 }
-
-/**
-
-エラー文字列一覧
-
-
-*/
 
 
 
