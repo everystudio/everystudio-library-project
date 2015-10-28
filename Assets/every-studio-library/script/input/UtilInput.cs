@@ -87,7 +87,7 @@ public class UtilInput : MonoBehaviour {
 			TouchPhase phase = TouchPhase.Canceled;
 			if (Input.GetMouseButtonDown (0)) {  
 				phase = TouchPhase.Began;
-				Debug.Log ("Begin");
+				//Debug.Log ("Begin");
 			} else if (Input.GetMouseButtonUp (0)) { 
 				phase = TouchPhase.Ended;
 			} else if (Input.GetMouseButton (0)) {

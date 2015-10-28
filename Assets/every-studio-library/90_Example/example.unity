@@ -243,3 +243,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d23f2966943354592943a3301a1277c4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_InputData: []
+  m_iUseDataSize: 2
