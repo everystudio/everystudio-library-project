@@ -1,0 +1,3 @@
+[submodule "Assets/every-studio-library"]
+	path = Assets/every-studio-library
+	url = https://github.com/mainitiamai/every-studio-library
